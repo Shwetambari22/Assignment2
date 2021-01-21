@@ -19,15 +19,12 @@ export class HomeComponent implements OnInit {
   }
 
   getUserName() {
-    const hasCategoryId: boolean = this.route.snapshot.paramMap.has('username');
+    const hasUserName: boolean = this.route.snapshot.paramMap.has('username');
 
-    //get the param id string . conver string to a number using the + symbol
-    if(hasCategoryId) {
+    if(hasUserName) {
       this.userName = this.route.snapshot.paramMap.get('username');
     } else {
-      //when category id not available, default to category 1
       this.userName = "User";
     }
   }
-
 }
