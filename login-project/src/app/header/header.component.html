@@ -1,0 +1,14 @@
+<header>
+    <nav class ="navbar navbar-expand-md navbar-dark bg-dark">
+    <div>Login Project</div>
+    
+    <ul class="navbar-nav">
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">Home</a></li>
+        <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
+    
+    </ul>
+    
+    </nav>
+    
+    </header>
