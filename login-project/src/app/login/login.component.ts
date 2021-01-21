@@ -37,6 +37,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['home/'+this.firstname[0]])
       this.invalidLogin = false
     } else {
+      alert("Invalid Email Id or Password");
       this.invalidLogin = true
     }
   }
